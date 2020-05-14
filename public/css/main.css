@@ -1,0 +1,107 @@
+/* Please add your own! */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/****************
+      MAIN 
+*****************/
+
+h1 {
+    font-weight: 700;
+}
+
+article {
+    padding: 10px;
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.nav .tag {
+    padding: 10px;
+    background-color: darkgreen;
+    display: inline;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+.tags2 {
+    padding: 20px;
+    background-color: lightcoral;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+
+/****************
+      FORM 
+*****************/
+
+.input-field {
+    padding: 10px 0;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+}
+
+button {
+	border: none;
+	padding: 10px;
+	background-color: green;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+.title-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    display: inline;
+    margin-right: 20px;
+}
+
+.content {
+    padding: 20px;
+    /*width: 60%;*/
+    margin: 0 auto;
+    font-size: large;
+    color: darkslategray;
+}
+
+.content a {
+    color: darkslateblue;
+    font-size: 15px;
+}

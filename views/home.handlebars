@@ -1,0 +1,41 @@
+<script src="/socket.io/socket.io.js"></script>
+
+{{#if tag}}
+<h2>Recent Destinations in {{tag}}:</h2> 
+{{else}}
+<h2 id="recentDests">Recent Destinations:</h2> 
+{{/if}}
+
+{{#if data}}
+	{{#each data}}
+	<article id="destinations">
+		<h2 class="title">{{this.city}}</h2> 
+		<div class="content">
+			<li class="country">Country: {{this.country}}</li>
+		<li> Distnce away from DC: {{this.distance}}</li>
+		<li> Average number of visitors per year: {{this.visitors}}</li>
+		<li>Ameneties:</li>
+		<ol> 
+				{{#each tags}}
+				<li>{{this.amenity}}</li>
+				{{/each}}
+			</ol>
+		</div>
+	</article>
+	{{/each}}
+
+	<script>
+		var socket = io();
+		socket.on('new dest', function(dest) {
+			var html = "<article><h2 class=\"title\">" + dest.city + "</h2><div class=\"content\"><li class=\"country\">Country: " + dest.country + "</li><li> Distnce away from DC: "+dest.distance+"</li><li> Average number of visitors per year: "+dest.visitors+"</li><li>Ameneties:</li><ol> {{#each tags}}<li>" +this.amenity+"</li>{{/each}}</ol></div></article>"
+    		$("#recentDests").append(html);
+		});
+	</script>
+{{else}}
+
+<article>
+    <h1>There are no destinations yet. :(</h1>
+    <a href="/create">Enter a vacation destination!</a>
+</article>
+
+{{/if}}

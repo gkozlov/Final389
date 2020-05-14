@@ -1,0 +1,26 @@
+<h1>Enter a new Destination</h1>
+<article>
+    <form method="POST" action="/api/create">
+        <div class="input-field">
+            <label>Destination City:</label>
+            <input type="text" name="city" size="50" placeholder="London">
+        </div>
+         <div class="input-field">
+            <label>Destination country:</label>
+            <input type="text" name="country" size="50" placeholder="Canada">
+        </div>
+        <div class="input-field">
+            <label>Distance from Washington DC:</label>
+            <input type="text" name="distance" size="50" placeholder="Enter distance in miles (Ex: 20.2 mi)">
+        </div>
+        <div class="input-field">
+            <label>Number of visitors per year:</label>
+            <input type="text" name="visitors" size="50" placeholder="Enter a number (Ex: 200)">
+        </div>
+        <div class="input-field">
+            <label>Amenities of the vacation spot:</label>
+            <input type="text" name="tags" size="50" placeholder="Tag1 Tag2 Tag3 (seperated by commas)">
+        </div>
+        <button type="submit">Create an entry </button>
+    </form>
+</article>
