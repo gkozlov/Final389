@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Midterm Project
 #### Out: 03/13/20 | Due: 04/10/20 11:59 PM | Deadline: 04/11/20 11:59 PM
 
@@ -187,3 +188,7 @@ There are two options for submitting this project:
 
 2. Submit a .zip file of your entire project directory.
 	* Please delete your `node_modules` directory in your project folder before submitting.      
+=======
+# Final389
+Final project for CMSC 389K
+>>>>>>> 1abd6e1b2fe042eb65833b25499f4b93e6bbdb2b
