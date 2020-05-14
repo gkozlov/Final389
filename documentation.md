@@ -5,7 +5,7 @@
 
 Name: George Kozlov
 
-Date: 04/10/2020
+Date: 05/13/20
 
 Project Topic: Crowdsourced website of vacation destinations
 
@@ -58,7 +58,7 @@ var options = {
         country: 'Peru',
         distance: "4000 mi",
         visitors: 35000000,
-        tags: ["Hiking","Natural Sights","History","Archaeological Remains"]
+        ameneties: ["Hiking","Natural Sights","History","Archaeological Remains"]
     } 
 };
 
@@ -80,7 +80,7 @@ Search Field: On city name
 ### 5. Navigation Pages
 
 Navigation Filters
-1. All Destinations within 1000 mile radius from DC -> `/closest`
+1. All Destinations within 1000 mile radius from College Park -> `/closest`
 2. Most Amenities -> `/most`
 3. Least number of annual visitors/Least Crowded -> `/least`
 4. Alphabetical listing by city -> `/alphabetical`
