@@ -21,7 +21,7 @@
         "make-random": "^1.2.0",
         "mongoose": "^5.9.13",
         "morgan": "^1.10.0",
-        "socket.io": "^2.3.0",
+        "socket.io": "^2.5.0",
         "underscore": "^1.10.2"
     }
 }
